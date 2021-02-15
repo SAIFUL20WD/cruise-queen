@@ -141,11 +141,16 @@
             const firstClassCount = getInputValue("first");
             const economyClassCount = getInputValue("economy");
             if(firstClassCount == 0 && economyClassCount == 0){
-                alert("Please Input The Number of Ticket You Want To Buy")
+                alert("Please Input The Number of Ticket You Want To Buy");
             }
             else{
-                alert("Thanks For Your Order")
+                alert("Thanks For Your Order");
             }
+            document.getElementById("first-class").value = 0;
+            document.getElementById("economy-class").value = 0;
+            document.getElementById("grand-total").innerText = "$" + 0;
+            document.getElementById("vat-amount").innerText = "$" + 0;
+            document.getElementById("sub-total").innerText = "$" + 0;
         }
     </script>
     <!--Thank You-->
